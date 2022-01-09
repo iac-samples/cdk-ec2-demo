@@ -1,6 +1,12 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to your CDK EC2 Demo TypeScript project!
 
-This is a blank project for TypeScript development with CDK.
+This project deploys an EC2 instance the the VPC created by the project [CDK VPC Smaple](https://github.com/iac-samples/cdk-vpc-demo)
+
+Before deploy this project, user need to check the cdk context to validate the cached values in the context. 
+
+If the cached VPC Id in the SSM or the inforamtion in the vpc-provider are not accurate, you need to remove those keys by using the command: `cdk context --reset KEY_OR_NUMBER`
+
+---
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
